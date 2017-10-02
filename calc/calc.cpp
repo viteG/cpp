@@ -44,13 +44,13 @@ void Token_stream::putback(Token t)
 }
 
 //------------------------------------------------------------------------------
-int factorial(int  num_int)
-{
-	if ( num_int == 0 ) return num_int = 1;
-	else if ( num_int >= 2 ) return num_int = num_int * factorial(num_int - 1);
-	else
-		return num_int;
-}
+//int factorial(int  num_int)
+//{
+//	if ( num_int == 0 ) return num_int = 1;
+//	else if ( num_int >= 2 ) return num_int = num_int * factorial(num_int - 1);
+//	else
+//		return num_int;
+//}
 
 //------------------------------------------------------------------------------
 
@@ -107,13 +107,13 @@ double primary()
 	switch ( t.kind )
 	{
 
-	case '!':
+	/*case '!':
 	{
 		double d = expression();
 		d = factorial(d);
 		t = ts.get();
 		return d;
-	}
+	}*/
 
 	case '(':    // handle '(' expression ')'
 	{
@@ -196,7 +196,7 @@ double expression()
 int main()
 try
 {
-	cout << factorial(5) << endl;
+	//cout << factorial(5) << endl;
 
 	cout << "Wellcome to app-calculator! Enter expressions with double numbers." << endl;
 	double val = 0;
