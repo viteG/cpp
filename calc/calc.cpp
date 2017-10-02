@@ -1,13 +1,5 @@
 #include "../../std_lib_facilities.h"
 
-abracadabra
-
-
-abracadabra
-
-
-abracadabra
-
 //------------------------------------------------------------------------------
 
 class Token
